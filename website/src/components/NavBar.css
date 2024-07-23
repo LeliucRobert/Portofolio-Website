@@ -19,6 +19,12 @@
     padding: .3vmax 4vmax;
     transition: all .5s;
     width: auto;
+
+    position: fixed; 
+    top: 0;       
+    left: 0;        
+    right: 0;        
+    z-index: 1000;   
   }
   
   .NavBar .NavBarLabel {

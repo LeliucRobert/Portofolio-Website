@@ -7,6 +7,7 @@ import HomeSection from "./components/HomeSection.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
+import ContactSection from "./components/ContactSection.jsx";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <HomeSection />
       <ProjectsSection />
       <SkillsSection />
+      <ContactSection />
     </>
   );
 };

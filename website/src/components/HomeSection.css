@@ -54,7 +54,7 @@
   }
 
   
-  img {
+  .Home-Image {
     --s: 400px; /* image size */
     --f: 1; /* initial scale */
   
@@ -69,7 +69,7 @@
     margin-top: 100px;
   }
   
-  img:hover {
+  .Home-Image:hover {
     --f: 1.4; /* hover scale */
     transform: scale(var(--f));
   }

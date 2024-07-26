@@ -253,13 +253,13 @@
   padding: 5px 0;
   margin: 10px 0;
   font-size: 1.1em;
-  color: #fff;
+  color: white;
   transition: transform 0.5s ease, color 0.5s ease, font-size 0.5s ease;
 }
 
 .container .contactForm form .inputBox input:focus ~ span,
+.container .contactForm form .inputBox input:valid ~ span,
 .container .contactForm form .inputBox textarea:focus ~ span,
-.container .contactForm form .inputBox textarea:valid ~ span,
 .container .contactForm form .inputBox textarea:valid ~ span {
   color: var(--secondary-color);
   font: 0.9em;

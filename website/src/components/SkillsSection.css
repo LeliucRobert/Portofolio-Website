@@ -1,19 +1,15 @@
 /** @format */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap");
 
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --primary-color: #4e0a97; /* Example primary color */
 }
 
-.SkillsLabel {
-  font-size: 50px;
-  font-weight: 700;
-
-  color: white;
-  text-align: center;
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .SkillsSection {
@@ -23,18 +19,22 @@
   font-weight: 700;
   padding: 200px;
   background-color: var(--primary-color);
+  box-sizing: border-box;
+}
+
+.SkillsLabel {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(170px, 1fr)
-  ); /* Adjust the min-width to make cards narrower */
-  gap: 20px;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgba(78, 10, 151, 0.3); /* More transparent background */
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .card {
@@ -50,12 +50,16 @@
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 150px;
 }
 
 .card img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .card h3 {

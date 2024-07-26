@@ -7,7 +7,8 @@ import pozaImage from "../utils/poza.jpeg";
 const HomeSection = () => {
   const phrases = [
     "Software Developer",
-    "Computer Science Student",
+    "Programmer",
+    "Coder",
     "Web Developer",
     "Software Engineer",
   ];
@@ -60,61 +61,75 @@ const HomeSection = () => {
   }, []);
 
   return (
-    <div className='HomeSectionText1'>
-      <div className='HomeSectionText'>
-        <div className='HomeSectionText1'>
-          <h1 className='HomeSectionLabel1'> Hello, I'm </h1>
-          <h1 className='HomeSectionLabel2'> Robert</h1>
+    <section id='home-section'>
+      <div className='HomeSectionText1'>
+        <div className='HomeSectionText'>
+          <div className='HomeSectionText1'>
+            <h1 className='HomeSectionLabel1'> Hello, I'm </h1>
+            <h1 className='HomeSectionLabel2'> Robert</h1>
+          </div>
+          <div className='HomeSectionAnimatedText'>
+            <span id='TypeWritter' ref={elRef} className='TypeWritter'>
+              {" "}
+            </span>
+            <span className='Cursor'>|</span>
+          </div>
+          <div className='Logos'>
+            <ul>
+              <li>
+                <a
+                  className='facebook'
+                  href='https://www.facebook.com/robi.lel.7/'
+                  target='_blank'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <i className='fa fa-facebook' aria-hidden='true'></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  className='linkedin'
+                  href='www.linkedin.com/in/leliuc-robert-997a35232'
+                  target='_blank'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <i className='fa-brands fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a className='instagram' href='#' target='_blank'>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <i className='fa fa-instagram' aria-hidden='true'></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  className='github'
+                  href='https://github.com/LeliucRobert'
+                  target='_blank'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <i className='fa-brands fa-github'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className='HomeSectionAnimatedText'>
-          <span id='TypeWritter' ref={elRef} className='TypeWritter'>
-            {" "}
-          </span>
-          <span className='Cursor'>|</span>
-        </div>
-        <div className='Logos'>
-          <ul>
-            <li>
-              <a class='facebook' href='#'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class='fa fa-facebook' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li>
-              <a class='twitter' href='#'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class='fa fa-twitter' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li>
-              <a class='instagram' href='#'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class='fa fa-instagram' aria-hidden='true'></i>
-              </a>
-            </li>
-            <li>
-              <a class='google' href='#'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class='fa fa-google-plus' aria-hidden='true'></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <img src={pozaImage} alt='Image description' className='Home-Image' />
       </div>
-      <img src={pozaImage} alt='Image description' className='Home-Image' />
-    </div>
+    </section>
   );
 };
 

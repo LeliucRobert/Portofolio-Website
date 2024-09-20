@@ -16,14 +16,14 @@
 }
 
 .ProjectsSection {
-  margin-top: 200px;
   width: 100vw;
   height: 100vh;
   background-color: var(--primary-color);
 }
 .nft {
   user-select: none;
-  max-width: 400px;
+  max-width: 530px;
+  height: 650px;
   margin: 5rem auto;
   border: 1px solid #ffffff22;
   background-color: #282c34;
@@ -38,7 +38,9 @@
   -webkit-backdrop-filter: blur(7px);
   overflow: hidden;
   transition: 0.5s all;
+
   hr {
+    height: 100%;
     width: 100%;
     border: none;
     border-bottom: 1px solid #88888855;
@@ -50,7 +52,7 @@
   .main {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     .tokenImage {
       border-radius: 0.5rem;
@@ -58,7 +60,34 @@
       height: 250px;
       object-fit: cover;
     }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 1.5rem;
+        color: #ffffff;
+      }
+    }
+    .github-button {
+      text-decoration: none;
+      background-color: #24292e;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      margin-right: 50px;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .github-button:hover {
+      background-color: #444c56;
+    }
     .description {
+      font-size: 20px;
+      font-weight: 500;
       margin: 0.5rem 0;
       color: #a89ec9;
     }
@@ -116,7 +145,7 @@
       }
     }
   }
-  ::before {
+  /* ::before {
     position: fixed;
     content: "";
     box-shadow: 0 0 100px 40px #ffffff08;
@@ -136,7 +165,7 @@
       top: -100%;
       left: 200%;
     }
-  }
+  } */
 }
 
 .bg {

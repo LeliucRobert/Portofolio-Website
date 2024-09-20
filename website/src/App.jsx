@@ -8,6 +8,7 @@ import ProjectsSection from "./components/ProjectsSection.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
+import AboutSection from "./components/AboutSection.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <ParticleBackground />
       <NavBar />
       <HomeSection />
+      <AboutSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />

@@ -6,7 +6,8 @@
   font-size: 50px;
   font-weight: 700;
   margin-left: 200px;
-  margin-top: 130px;
+  margin-top: 350px;
+  margin-bottom: 150px;
 }
 
 .HomeSectionText1 {
@@ -53,7 +54,7 @@
 }
 
 .Home-Image {
-  --s: 400px; /* image size */
+  --s: 450px; /* image size */
   --f: 1; /* initial scale */
 
   width: var(--s);
@@ -63,12 +64,12 @@
   cursor: pointer;
   transition: transform 0.5s;
   transform: scale(var(--f));
-  margin-left: 250px;
-  margin-top: 100px;
+  margin-left: 550px;
+  margin-top: 150px;
 }
 
 .Home-Image:hover {
-  --f: 1.4; /* hover scale */
+  --f: 1.1; /* hover scale */
   transform: scale(var(--f));
 }
 

@@ -2,8 +2,9 @@
 
 .ContactSection {
   margin-top: 200px;
+  margin-bottom: 50px;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   font-weight: 700;
   padding: 0px;
   background-color: var(--primary-color);
@@ -18,7 +19,7 @@
 
 .contact {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 50px 100px;
   display: flex;
   justify-content: center;

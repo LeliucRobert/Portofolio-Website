@@ -12,25 +12,27 @@ const AboutSection = () => {
       <div className="about-section">
         <h2>About Me</h2>
         <p>
-          Hi, I'm Robert, a passionate Software Engineer with a strong
-          foundation in developing innovative and user-centric software
-          solutions. With experience in multiple programming languages such as
-          Python, JavaScript, C++, and frameworks like React, Django, and
-          TypeScript, I strive to build efficient and scalable applications. I
-          enjoy working on both frontend and backend development, always aiming
-          to deliver seamless user experiences.
+          My name is Robert, and I am a passionate enthusiast of computer
+          science and technology. I have experience with technologies such as
+          C++, Python, and JavaScript, and I’ve worked with frameworks like
+          Django REST, Flask, and FastAPI. I am well-versed in concepts like
+          object-oriented programming, data structures, and operating systems,
+          and I know how to effectively work with REST APIs.
         </p>
         <p>
-          I'm constantly learning and adapting to new technologies, and I take
-          pride in applying my skills to real-world projects. Whether it's
-          building an interactive web application, creating an efficient backend
-          system, or exploring the depths of machine learning, I am always eager
-          to challenge myself and grow as a developer.
+          One of my most remarkable projects was the AI Microorganism
+          Identification, which earned me 2nd place at the Science and
+          Technology National Contest. This achievement also led to our
+          selection by Milset Romania to participate in Expo Sciences Asia in
+          Dubai 2022. I am eager to expand my knowledge and skills in computer
+          science, constantly seeking new opportunities to learn.
         </p>
         <p>
-          When I'm not coding, you can find me diving into the latest tech
-          trends or collaborating with the community on open-source projects.
-          Let's connect and create something extraordinary together!
+          I have developed innovative solutions, ranging from Chrome extensions
+          to Websites, all designed to help others. With a particular interest
+          in AI, I enjoy exploring ways to automate aspects of my life with it.
+          I look forward to connecting with others to collaborate on innovative
+          projects and drive technological advancement together.
         </p>
       </div>
     </section>

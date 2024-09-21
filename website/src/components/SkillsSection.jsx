@@ -25,6 +25,12 @@ const skillsData = [
 const SkillsSection = () => {
   return (
     <section id="skills-section">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <div className="skills-section">
         <h2>My Skills</h2>
         <div className="skills-grid">

@@ -128,7 +128,7 @@ const HomeSection = () => {
           </div>
         </div>
         <img
-          src="images/me.jfif"
+          src="images/me2.jfif"
           alt="Image description"
           className="Home-Image"
         />

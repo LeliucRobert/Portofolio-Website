@@ -3,56 +3,41 @@
 import React from "react";
 import "./SkillsSection.css";
 
+const skillsData = [
+  { title: "Python", imgSrc: "images/python.svg" },
+  { title: "JavaScript", imgSrc: "images/js.png" },
+  { title: "React", imgSrc: "images/react.png" },
+  { title: "Django", imgSrc: "images/dj.png" },
+  { title: "MySQL", imgSrc: "images/Mysql.png" },
+  { title: "PostgreSQL", imgSrc: "images/postgre.png" },
+  { title: "Git", imgSrc: "images/git.png" },
+  { title: "C", imgSrc: "images/C.png" },
+  { title: "C++", imgSrc: "images/cpp.png" },
+  { title: "HTML5", imgSrc: "images/html.png" },
+  { title: "CSS3", imgSrc: "images/css.svg" },
+  { title: "Flutter", imgSrc: "images/flutter.png" },
+  { title: "Linux", imgSrc: "images/linux.png" },
+  { title: "Fast API", imgSrc: "images/fastapi.svg" },
+  { title: "Flask", imgSrc: "images/flask.png" },
+  { title: "SQLite", imgSrc: "images/sqlite.png" },
+];
+
 const SkillsSection = () => {
   return (
-    <section id='skills-section'>
-      <div className='SkillsSection'>
-        <h1 className='SkillsLabel'>Skills</h1>
-        <div className='container'>
-          <div className='card'>
-            <img src='images/python.svg' alt='Python' />
-
-            <h3>Python</h3>
-          </div>
-          <div className='card'>
-            <img src='images/C.png' alt='Python' />
-
-            <h3>C/C++</h3>
-          </div>
-          <div className='card'>
-            <img src='images/js.png' alt='Python' />
-
-            <h3>JavaScript</h3>
-          </div>
-          <div className='card'>
-            <img src='images/git.avif' alt='Python' />
-
-            <h3>Git</h3>
-          </div>
-          <div className='card'>
-            <img src='images/ts.png' alt='Python' />
-            <h3>TypeScript</h3>
-          </div>
-          <div className='card'>
-            <img src='images/react.png' alt='Python' />
-            <h3>React JS</h3>
-          </div>
-          <div className='card'>
-            <img src='images/dj.png' alt='Python' />
-            <h3>Django</h3>
-          </div>
-          <div className='card'>
-            <img src='images/Mysql.png' alt='Python' />
-            <h3>MySql</h3>
-          </div>
-          <div className='card'>
-            <img src='path/to/python.png' alt='Python' />
-            <h3>Python</h3>
-          </div>
-          <div className='card'>
-            <img src='path/to/python.png' alt='Python' />
-            <h3>Python</h3>
-          </div>
+    <section id="skills-section">
+      <div className="skills-section">
+        <h2>My Skills</h2>
+        <div className="skills-grid">
+          {skillsData.map((skill, index) => (
+            <div key={index} className="skill-card">
+              <img
+                src={skill.imgSrc}
+                alt={skill.title}
+                className="skill-image"
+              />
+              <h3>{skill.title}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>

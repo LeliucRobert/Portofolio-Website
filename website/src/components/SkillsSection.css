@@ -12,61 +12,66 @@ body {
   padding: 0;
 }
 
-.SkillsSection {
-  margin-top: 200px;
-  width: 100vw;
-  height: 100vh;
-  font-weight: 700;
-  padding: 200px;
-  background-color: var(--primary-color);
-  box-sizing: border-box;
-}
-
-.SkillsLabel {
-  font-size: 2.5em;
+.skills-section {
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 40px;
 }
 
-.container {
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f06595; /* Pink accent for the title */
+}
+
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(78, 10, 151, 0.3); /* More transparent background */
-  border-radius: 15px;
-  box-sizing: border-box;
+  gap: 20px;
 }
 
-.card {
-  background-color: rgba(
-    27,
-    27,
-    27,
-    0.7
-  ); /* Slightly less transparent background */
-  border-radius: 10px;
+.skill-card {
+  background-color: #2e2e2e;
+  border-radius: 8px;
   padding: 20px;
+  width: 150px;
   text-align: center;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
+  transition: transform 0.3s ease;
 }
 
-.card img {
-  width: 80px;
-  height: 80px;
+.skill-card:hover {
+  transform: translateY(-10px);
 }
 
-.card h3 {
-  margin: 10px 0 0;
-  font-size: 18px;
+.skill-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.skill-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+
+  .skill-card {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .skill-image {
+    width: 80px;
+    height: 80px;
+  }
 }

@@ -127,11 +127,11 @@ const HomeSection = () => {
             </ul>
           </div>
         </div>
-        {/* <img
-          src="images/mee22.jfif"
+        <img
+          src="images/me.jfif"
           alt="Image description"
           className="Home-Image"
-        /> */}
+        />
       </div>
     </section>
   );
